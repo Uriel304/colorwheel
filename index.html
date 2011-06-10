@@ -112,8 +112,8 @@
       <div class="code">
         <h2>Usage and methods</h2>
         <div class="method">
-        <b>var cw = Raphael.colorwheel(dom_element, height_width [, segments]);</b>
-        <div>The wheel is drawn into a square, so only one dimension is required. <b>segments</b> is an option to increase, or decrease, the smoothness of the hue ring. 60 is the default.</div>
+        <b>var cw = Raphael.colorwheel(dom_element, height_width);</b>
+        <div>The wheel is drawn into a square, so only one dimension is required.</div>
         </div>
 
         <div class="method">
@@ -177,7 +177,7 @@
 
       <div id="size_example" class="example">
         <h2>Sizes</h2>
-        <p>The wheel can be scaled to suit your needs.  The large ring has larger number of segments, to make it smoother.</p>
+        <p>The wheel can be scaled to suit your needs.</p>
         <div style="float:left; width:100%">
           <div class="colorwheel_small" style="text-align:left; float:left;margin-right:30px; margin-top:125px"></div>
           <div class="colorwheel_large" style="text-align:left; float:left;margin-right:30px; float:left;"></div>
@@ -214,7 +214,7 @@
 function size_example(){
   Raphael.colorwheel($("#size_example .colorwheel_small")[0],50).color("#F00");
   Raphael.colorwheel($("#size_example .colorwheel_medium")[0],150).color("#0F0");
-  Raphael.colorwheel($("#size_example .colorwheel_large")[0],300, 180).color("#00F");
+  Raphael.colorwheel($("#size_example .colorwheel_large")[0],300).color("#00F");
 }
 
 function input_example(){
